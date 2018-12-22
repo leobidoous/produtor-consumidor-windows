@@ -1,0 +1,60 @@
+<TelaPrincipal>:
+    canvas.before:
+        Color:
+            rgba: (1, 1, 1, 0.1)
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    BoxLayout:
+        orientation: 'vertical'
+
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint: (1., .046)
+            Label:
+                text: 'Número de Produtores'
+            TextInput:
+                text: '3'
+                readonly: True
+            Label:
+                text: 'Número de Consumidores'
+            TextInput:
+                text: '1'
+                readonly: True
+
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint: (1., .1)
+            Button:
+                text: ' NEW PROCESS PRODUTOR '
+            Button:
+                text: ' NEW PROCESS CONSUMMIDOR '
+
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint: (1., .75)
+            TextInput:
+                text: '3'
+                readonly: True
+            TextInput:
+                text: '3'
+                readonly: True
+
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint: (1., .046)
+            Button:
+                text: ' KILL PROCESS PRODUTOR (PID)'
+                size_hint: (.35, 1.)
+            TextInput:
+                text: '3'
+                readonly: True
+                size_hint: (.15, 1.)
+            Button:
+                text: ' KILL PROCESS CONSUMMIDOR (PID)'
+                size_hint: (.35, 1.)
+            TextInput:
+                text: '3'
+                readonly: True
+                size_hint: (.15, 1.)

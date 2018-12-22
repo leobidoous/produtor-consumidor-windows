@@ -1,0 +1,4 @@
+kivy
+pywin32
+mmap
+cython
